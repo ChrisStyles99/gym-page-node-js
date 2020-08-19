@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs') %> 
+<div class="register">
+  <h1>Register</h1>  
+  <form action="/register" method="POST">
+    <% if(signupMessage) { %>
+      <p class="error-message"><%= signupMessage %></p> 
+    <% } %>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="Register">
+    <p>Already have an account?<a href="/login">Login here</a></p>
+  </form>
+</div>
+<%- include('./partials/footer.ejs') %> 

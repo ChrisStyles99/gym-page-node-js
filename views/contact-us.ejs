@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs') %>
+<main class="contact-page">
+  <div class="form-container">
+    <h1>Contact us!</h1>
+    <form action="/contact-us" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message</label>
+      <textarea id="message" cols="20" rows="5" name="message"></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+</main>
+<%- include('./partials/footer.ejs') %> 
